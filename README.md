@@ -170,3 +170,12 @@ Embora ela se baseie no lado do many, **não é verdade que ela é mais eficient
   ```
   
   Se algum erro ocorrer no método **salvarHistoricoEvento**, a aplicação não irá dar rollback no método **salvarEvento**.
+  
+  
+  # O Projeto
+  
+  - O projeto foi criado utilizando o quarkus.io implementa o banco de dados que possui as Classes Evento, Artista, Facebook, Historico, Cidade, Exigencia. O intuito é uma API que cria eventos em uma cidade que possui artistas com exigencias e facebook. Para funcionamento interno da aplicação temos um controle de historico que toda vez que se salva um evento é salvo um historico.
+  
+  - As configurações de banco estão no arquivo application.properties.
+  
+  
