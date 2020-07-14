@@ -28,6 +28,9 @@ public class Artista extends PanacheEntity {
             @JoinColumn(name = "id_artista" ) }, inverseJoinColumns = { @JoinColumn(name ="id_exigencia" ) })
     private List<Exigencia> exigenciasArtista;
 
+    @OneToOne(mappedBy = "artista")
+    private Facebook facebookArtista;
+
     private String nome;
 
     public String getCpf() {
@@ -68,5 +71,13 @@ public class Artista extends PanacheEntity {
 
     public void setExigenciasArtista(List<Exigencia> exigenciasArtista) {
         this.exigenciasArtista = exigenciasArtista;
+    }
+
+    public Facebook getFacebookArtista() {
+        return facebookArtista;
+    }
+
+    public void setFacebookArtista(Facebook facebookArtista) {
+        this.facebookArtista = facebookArtista;
     }
 }
