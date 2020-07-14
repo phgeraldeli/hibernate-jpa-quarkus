@@ -103,7 +103,7 @@ public class Artista extends PanacheEntity {
 
 - A principal diferença entre o relacionamento unidirecional e bidirecional é a navegação, em uma relação bidirecional temos a navegação de ambos os lados dentro do código.
 
-- A relação bidirecional se baseia no lado do Many, assim criando queries de forma igualmente eficiente a relação ManyToMany.
+- A relação bidirecional se baseia no lado do Many, assim criando queries de forma igualmente eficiente a relação ManyToOne.
 
 - A relação bidirecional requer mais cuidados e aumenta a complexidade do código.
 
