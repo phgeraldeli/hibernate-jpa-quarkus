@@ -12,7 +12,7 @@ public class Evento extends PanacheEntity {
     private LocalDate data;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_artista")
+    @JoinColumn(name = "id_evento")
     private List<Artista> artistas;
 
     @ManyToOne
